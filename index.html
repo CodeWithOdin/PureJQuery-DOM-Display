@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+            <li class="each-task">
+                <span class="task-text">1</span>
+                <button class="complete">complete</button>
+                <button class="delete">delete</button>
+                <button class="edit">Edit</button>
+            </li>
+            <li class="each-task">
+                <span class="task-text">2</span>
+                <button class="complete">complete</button>
+                <button class="delete">delete</button>
+                <button class="edit">Edit</button>
+            </li>
+            <li class="each-task">
+                <span class="task-text">3</span>
+                <button class="complete">complete</button>
+                <button class="delete">delete</button>
+                <button class="edit">Edit</button>
+            </li>           
+            
+        </ul>
+    </div>
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

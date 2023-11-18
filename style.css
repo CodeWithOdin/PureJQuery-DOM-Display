@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.completed {
+    text-decoration: line-through; /* Add a strikethrough style for completed tasks */
+    color: #777; /* Change text color for completed tasks */
+}
+
+/* Style for task list items */
+ li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff; /* Background color for tasks */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-align: center; /* Center-align text within tasks */
+}
+
+/* Hover effect for task list items */
+li:hover {
+    background-color: #f2f2f2; /* Background color on hover */
+}
+
+/* Style for task actions buttons */
+.task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Style for task actions buttons on hover */
+.task-actions button:hover {
+    background-color: #555; /* Background color on hover */
+}
+#task-input {
+    width: 100%;
+    padding: 10px 5px; /* Add padding to the right (adjust as needed) */
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#task-input:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
